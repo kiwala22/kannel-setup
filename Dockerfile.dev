@@ -1,0 +1,8 @@
+# Dockerfile created on 7-12-2022
+# To run setup scripts for centos in Development Environment
+
+FROM centos:latest
+
+WORKDIR /scripts
+COPY *.sh ./
+RUN chmod +x ./*.sh
